@@ -1,0 +1,17 @@
+/*
+Theme Name: SC Basic
+Theme URI: http://localhost:85/wordpress/themes/sharpEdge
+Version: 0.1
+Author: Pheriche
+Author URI: https://phppot.com/
+Description: A Minimal WordPress Theme.
+Tags: minimal, simple, responsive, light-weight
+Text Domain: phersc
+*/
+body{margin:0;
+  padding:0;
+  background: #fff;
+  font-family: cabin,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell;
+}
+#primary{margin:0;padding:0;}
+

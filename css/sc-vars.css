@@ -1,0 +1,64 @@
+:root{
+  --light-text-color:#f0e0c5;
+  --mainorange:#f55529;
+
+  /* general colours */
+  --sc-bodytext-dark:#535353;
+  --sc-bodytext-lite:#f6f2e1;
+
+  --sc-articlebg-lite:#e4e8ef;
+  --sc-articlebg-Wisteria:#a153aa;
+
+  /*orange*/
+  --sc-orange-1:#f55529;
+  --sc-orange-2:#ff6b4e;
+  --sc-orange-3:#ff8067;
+
+  --sc-orange-dark:#6c2216;
+  --sc-orange-lite:#ffdfcf;
+
+  /* purple */
+  --sc-purple-1:#6a488e;
+  --sc-purple-2:#776dba;
+  --sc-purple-3:#a08dd0;
+
+  --sc-purple-dark:#a08dd0;
+  --sc-purple-lite:#432368;
+
+  /* plum */
+  --sc-plum-1:#932e80;
+  --sc-plum-2:#ba67aa;
+  --sc-plum-3:#dcb4ee;
+
+  --sc-plum-dark:#4c1051;
+  --sc-plum-lite:#dcb4ee;
+
+
+  /* Amaranth */
+  --sc-amaranth-1:#e23448;
+  --sc-amaranth-2:#dc575e;
+  --sc-amaranth-3:#f48386;
+
+  --sc-amaranth-dark:#820028;
+  --sc-amaranth-lite:#ffc0cc;
+
+  /* Buttermilk */
+  --sc-buttermilk-1:#ffeeb6;
+  --sc-buttermilk-2:#f8efc5;
+  --sc-buttermilk-3:#f6f2e1;
+
+  --sc-buttermilk-dark:#b5945b;
+  --sc-buttermilk-lite:#f6f2e1;
+
+
+/* persiangreen */
+--sc-persiangreen-1:#009c99;
+--sc-persiangreen-2:#00c5be;
+--sc-persiangreen-3:#8ce7f3;
+
+--sc-persiangreen-dark:#00605b;
+--sc-persiangreen-lite:#8ce7f3;
+
+/*** WIDTHS AND SIZES ***/
+--sc-max-width:1400px;
+}

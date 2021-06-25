@@ -1,0 +1,51 @@
+header .header_inner{
+  padding:20px 40px;
+}
+
+header .header_inner .site-logo{
+  padding:0;
+  margin: 0;
+}
+
+.home .site-title a{color:var(--light-text-color);}
+
+wp-block-cover__inner-container,
+.header_inner,
+.footer_inner,
+.content_inner,
+.alignwide .wp-block-group__inner-container,
+.alignfull .wp-block-group__inner-container{
+  max-width:var(--sc-max-width)!important;
+  margin: auto;
+}
+
+/* the two columns of the header*/
+.header_inner{display:flex;}
+.site_logo{
+  flex:20%;
+  padding:20px 0;
+}
+.menu_container{
+  flex:60%;
+  text-align: right;
+  padding:20px 0;
+}
+
+/* MENU STUFF */
+.menu-main-menu-small-container{}
+.menu-main-menu-small-container ul,
+.menu-main-menu-small-container ul li {display: inline-block;padding:0;margin:0;}
+
+header .menu-item a{
+  display: inline-block;
+  padding:10px 20px;
+  text-decoration:none;
+}
+
+/* PER ZONE MENU VARIATIONS */
+.home header{background-color: var(--mainorange);}
+.home header .menu_container a{
+  color: var(--light-text-color);
+  padding:10px;
+}
+

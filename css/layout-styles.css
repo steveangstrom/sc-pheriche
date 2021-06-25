@@ -1,0 +1,160 @@
+
+/*  THE PAGE LAYOUT WHICH GETS DISPLAYED IN BOTH THE EDITOR AND THE FRONT END ***/
+
+/************ FONT MAGIC ***********************/
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+			line-height: normal;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+		line-height: normal;
+  }
+}
+
+/****************************/
+/*
+.alignwide,
+.alignfull {
+	margin: 32px calc(50% - 50vw);
+	max-width: 100vw;
+	width: 100vw;
+}
+
+@media (max-width: 920px) {
+	.alignwide {
+		margin: 32px calc( ( 767px - 920px ) / 2 );
+		max-width: 920px;
+		width: 920px;
+	}
+}*/
+/**********************************/
+
+.sc-section{
+  padding:40px;
+  position: relative;
+  display: flex;
+  margin:0;
+  min-height: 70vh;
+}
+
+.sc-section p,
+.sc-section h1,
+.sc-section h2,
+.sc-section h3{color:var(--light-text-color);}
+
+
+.home-head-section{
+	padding-bottom:100px!important;
+	position: relative!important;
+	z-index:1;
+	align-items: center;
+	background-color: #f55529;
+}
+
+
+.home-head-section:after{ /*illustration insertion*/
+  position: absolute!important;
+  top:auto!important;
+  left:auto!important;
+  right: 0px!important;
+  bottom:0px;
+	content: '';
+	width: 48%;
+	height: 600px;
+	background: url('../res/img/home-bg-illustration.png') no-repeat;
+	background-size: contain;
+	mix-blend-mode: luminosity;
+	opacity:0.6;
+	display: block;
+	z-index: 1111;
+}
+
+/***  THIS IS THE SLANT */
+/*possibly swap this out for an SVG which gets coloured by vars and can be used in each section */
+.home-head-section::before {
+	content: "" !important;
+	width: 100%;
+  height: 300px;
+	position: absolute;
+	background-color: transparent !important;
+	top: auto !important;
+	bottom: 0;
+	left: 0 !important;
+	background-size: cover;
+	transform: rotateX(180deg);
+	z-index: 100;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjOTMyZTgwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHBhdGggZD0iTTEyODAgMTQwVjBIMGwxMjgwIDE0MHoiPjwvcGF0aD4KICA8L3N2Zz4=);
+}
+
+/* core provision */
+.home-core-provision-section{
+	background-color: #932e80;
+  align-items: center;
+	padding-bottom:200px!important;
+  padding-top:0px;
+  margin-top:-60px;
+}
+.home-core-provision-section .wp-block-group__inner-container{
+  padding-top:100px;
+}
+
+/*  testing the slants */
+.home-core-provision-section::before {
+  content: "" !important;
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	background-color: transparent !important;
+	top: auto !important;
+	bottom: 0px;
+	left: 0px !important;
+	background-size: cover;
+	transform: rotateX(180deg) scaleX(-1);
+	z-index: 100;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2600 200'><path class='special-shape-fill' style='fill:%2300a67f' d='M0 0L2600 0 2600 200 0 0z'/></svg>");
+
+  }
+
+/** Home Section Portal , green */
+.home-portal-section{
+  background:#00a67f;
+  align-items: center;
+  	padding-bottom:200px!important;
+}
+.home-portal-section::before {
+  content: "" !important;
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	background-color: transparent !important;
+	top: auto !important;
+	bottom: 0px;
+	left: 0px !important;
+	background-size: cover;
+	transform: rotateX(180deg);
+	z-index: 100;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2600 200'><path class='special-shape-fill' style='fill:%23e23448' d='M0 0L2600 0 2600 200 0 0z'/></svg>");
+
+  }
+
+.home-publications-section{
+  background:#e23448;
+  align-items: center;
+	padding-bottom:100px!important;
+}
+
+
+.testitem{
+  width:100%;height:100px;
+  background:#f00;
+  position:absolute;
+  bottom:0px;left:0px;
+}
+
